@@ -1,0 +1,26 @@
+import 'package:flutter/material.dart';
+
+import 'package:shimmer/shimmer.dart';
+
+class AdsCommentShimmer extends StatelessWidget {
+  final loadingAnimationBackground = Colors.black12;
+
+  @override
+  Widget build(BuildContext context) {
+    return Shimmer.fromColors(
+      baseColor: Colors.black,
+      highlightColor: Colors.black,
+      child: ListTile(
+        leading: CircleAvatar(),
+        title: Container(
+          color: Colors.black12,
+          height: 20,
+        ),
+        subtitle: Container(
+          color: loadingAnimationBackground,
+          height: 10,
+        ),
+      ),
+    );
+  }
+}

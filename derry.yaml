@@ -1,0 +1,18 @@
+gen:
+  # - flutter pub get
+  - flutter pub run build_runner build
+genr: 
+  - flutter pub get
+  - flutter pub run build_runner build --delete-conflicting-outputs
+
+web_skia: flutter run -d chrome --dart-define=FLUTTER_WEB_USE_SKIA=true
+build_web_skia: flutter build web --dart-define=FLUTTER_WEB_USE_SKIA=true
+
+icons: flutter pub run flutter_launcher_icons:main
+
+clean:
+  - flutter clean
+  - flutter pub get
+  - flutter pub run import_sorter:main
+  - flutter format .
+  - flutter analyze .
