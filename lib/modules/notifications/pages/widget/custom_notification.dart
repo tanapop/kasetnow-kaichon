@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 
 import 'package:flutter_ringtone_player/flutter_ringtone_player.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
+
+import '../../../../styles.dart';
 
 class CustomNotificationWidget extends StatefulWidget {
   final String title;
@@ -68,9 +69,10 @@ class _CustomNotificationWidgetState extends State<CustomNotificationWidget> {
               child: Text(
                 widget.body,
                 overflow: TextOverflow.ellipsis,
-                style: GoogleFonts.basic(
-                    textStyle: theme.textTheme.subtitle1
-                        .copyWith(color: Colors.white)),
+                style: TextStyle(color: AppStyles.primaryColorWhite),
+                // style: GoogleFonts.basic(
+                //     textStyle: theme.textTheme.subtitle1
+                //         .copyWith(color: Colors.white)),
               ),
             )
           ],

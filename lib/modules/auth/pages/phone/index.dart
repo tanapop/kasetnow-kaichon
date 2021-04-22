@@ -98,7 +98,10 @@ class _PhoneLoginPageState extends State<PhoneLoginPage> {
 
   Future<void> getValidationCode() async {
     if (!phoneNumber.isPhoneNumber) {
-      BotToast.showText(text: t.InvalidPhone);
+      BotToast.showText(
+          text: t.InvalidPhone,
+          backgroundColor: AppStyles.primaryColorGray,
+          contentColor: AppStyles.primaryColorWhite);
       return;
     }
     isLoading(true);

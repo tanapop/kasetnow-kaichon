@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 
 import 'package:flutter_linkify/flutter_linkify.dart';
-import 'package:google_fonts/google_fonts.dart';
-
 import '../../../../../../imports.dart';
 import '../../../../models/message.dart';
 
@@ -27,11 +25,12 @@ class TextMsgItem extends StatelessWidget {
             : AppStyles.primaryColorTextField,
       ),
       child: Linkify(
-        onOpen: (l) => launchURL(l.url),
-        text: msg.content,
-        style: GoogleFonts.basic(
-            textStyle: theme.textTheme.subtitle1, color: Colors.white),
-      ),
+          onOpen: (l) => launchURL(l.url),
+          text: msg.content,
+          style: TextStyle(color: AppStyles.primaryColorWhite)
+          //  GoogleFonts.basic(
+          //     textStyle: theme.textTheme.subtitle1, color: Colors.white),
+          ),
     );
   }
 }

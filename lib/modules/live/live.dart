@@ -5,19 +5,14 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flare_flutter/flare_controls.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:infinite_scroll_pagination/infinite_scroll_pagination.dart';
-import 'package:kaichon/modules/live/model/live.dart';
-import 'package:kaichon/modules/live/join.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+
 import '../../imports.dart';
 import '../auth/data/user.dart';
-import '../notifications/provider.dart';
-import '../feeds/data/posts.dart';
 import '../feeds/models/post.dart';
-import '../feeds/pages/posts/widgets/post_add.dart';
-import '../feeds/pages/posts/widgets/post_item.dart';
-import '../feeds/pages/posts/widgets/shimmer.dart';
+import '../notifications/provider.dart';
+import 'model/live.dart';
 
 class LivePage extends StatefulWidget {
   final BuildContext menuScreenContext;

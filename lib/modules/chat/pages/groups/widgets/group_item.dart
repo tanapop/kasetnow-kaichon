@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import 'package:badges/badges.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 import '../../../../../imports.dart';
 import '../../../data/group_msgs.dart';
@@ -24,8 +23,9 @@ class GroupItem extends StatelessWidget {
       ),
       title: Text(
         group.name,
-        style:
-            GoogleFonts.basic(textStyle: Theme.of(context).textTheme.subtitle1),
+        style: TextStyle(color: AppStyles.primaryColorWhite),
+        // style:
+        //     GoogleFonts.basic(textStyle: Theme.of(context).textTheme.subtitle1),
       ),
       trailing: StreamBuilder<List<Message>>(
         stream: GroupMessagesRepository.msgsStream(group.id, 10),

@@ -63,7 +63,8 @@ class _PostAdsWidgetState extends State<PostAdsWidget> {
                           : post.content,
                       onOpen: (l) => launchURL(l.url),
                       style: TextStyle(
-                          color: AppStyles.primaryColorTextField, fontSize: 18),
+                          color: AppStyles.primaryColorWhite.withOpacity(1.0),
+                          fontSize: 18),
                     ),
                   ),
                   if (showMore)

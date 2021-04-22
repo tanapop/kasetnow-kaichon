@@ -134,7 +134,7 @@ class Strings {
   static Strings _instance = Strings._();
   static Strings get instance => _instance;
 
-  String AppName = 'เกษตรนาว';
+  String AppName = 'ไก่ชน';
   String AboutApp = 'เกษตรก้าวไกล ใส่ใจความพอเพียง';
   String AppVersion = '1.0.0';
   String UnknownError = 'Oops, Something went Wrong!';

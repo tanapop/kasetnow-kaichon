@@ -20,7 +20,7 @@ import 'package:flutter/material.dart';
 class ColorItemView extends StatelessWidget {
   final Color color;
 
-  ColorItemView(this.color);
+  const ColorItemView(this.color);
 
   @override
   Widget build(BuildContext context) {

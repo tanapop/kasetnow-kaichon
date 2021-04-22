@@ -38,7 +38,7 @@ class UserTile extends StatelessWidget {
                     '${user.fullName} ${user.isAdmin ? "(${t.Admin})" : ""}',
                     maxLines: 1,
                     style: TextStyle(
-                        color: AppStyles.primaryColorTextField,
+                        color: AppStyles.primaryColorWhite,
                         fontWeight: FontWeight.bold),
                   ),
                   Text(

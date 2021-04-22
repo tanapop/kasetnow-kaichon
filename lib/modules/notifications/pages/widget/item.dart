@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
-
+import '../../../../styles.dart';
 import '../../data/notifications.dart';
 import '../../models/notification.dart';
 
@@ -35,8 +34,9 @@ class NotificationItem extends StatelessWidget {
                 Flexible(
                   child: Text(
                     not.text,
-                    style:
-                        GoogleFonts.basic(textStyle: theme.textTheme.subtitle1),
+                    style: TextStyle(color: AppStyles.primaryColorWhite),
+                    // style:
+                    //     GoogleFonts.basic(textStyle: theme.textTheme.subtitle1),
                   ),
                 ),
               ],

@@ -31,7 +31,7 @@ class VerificationTopHeader extends StatelessWidget {
           ),
           Padding(
             padding: const EdgeInsets.only(top: 200, bottom: 20),
-            child: Image.asset(Assets.images.logo.path),
+            child: Image.asset(Assets.appIcon.path),
           ),
           /*Padding(
               padding: const EdgeInsets.only(top: 400, bottom: 20),

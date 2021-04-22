@@ -13,7 +13,7 @@ class RegisterTopHeader extends StatelessWidget {
     return Container(
       width: context.width,
       height: height ?? context.height / 2.8,
-      decoration: BoxDecoration(gradient: AppStyles.primaryGradientGray),
+      decoration: BoxDecoration(color: AppStyles.primaryColorBlackKnow),
       child: Stack(
         alignment: Alignment.topCenter,
         children: [

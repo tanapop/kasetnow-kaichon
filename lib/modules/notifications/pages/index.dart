@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-
-import 'package:google_fonts/google_fonts.dart';
 import 'package:pull_to_refresh/pull_to_refresh.dart';
 
 import '../../../imports.dart';
@@ -18,7 +16,8 @@ class NotificationScreen extends StatelessWidget {
         ListTile(
           title: Text(
             t.Notifications,
-            style: GoogleFonts.basic(textStyle: theme.textTheme.headline5),
+            style: TextStyle(color: AppStyles.primaryColorWhite),
+            // style: GoogleFonts.basic(textStyle: theme.textTheme.headline5),
           ),
           trailing: Icon(Icons.notifications),
         ),

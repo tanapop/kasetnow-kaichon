@@ -31,7 +31,7 @@ class _GenderWidgetState extends State<GenderWidget> {
               value: g,
               groupValue: gender,
               onChanged: onSelect,
-              activeColor: AppStyles.primaryColorLight,
+              activeColor: AppStyles.primaryColorRedKnow,
             ),
           ),
       ],

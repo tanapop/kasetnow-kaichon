@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-
-import 'package:google_fonts/google_fonts.dart';
 import 'package:pull_to_refresh/pull_to_refresh.dart';
 
 import '../../../../imports.dart';
@@ -41,9 +39,10 @@ class _GroupsListPageState extends State<GroupsListPage> {
                   padding: const EdgeInsets.only(top: 4, bottom: 8, left: 20),
                   child: Text(
                     t.Groups,
-                    style: GoogleFonts.basic(
-                      textStyle: theme.textTheme.headline5,
-                    ),
+                    style: TextStyle(color: AppStyles.primaryColorWhite),
+                    // style: GoogleFonts.basic(
+                    //   textStyle: theme.textTheme.headline5,
+                    // ),
                   ),
                 ),
                 IconButton(
@@ -89,9 +88,7 @@ class _GroupsListPageState extends State<GroupsListPage> {
             ),
             TextButton.icon(
               onPressed: AppNavigator.toGroupEditor,
-              style: TextButton.styleFrom(
-                primary: Colors.white
-              ),
+              style: TextButton.styleFrom(primary: Colors.white),
               label: Text(t.CreateGroup),
               icon: Icon(Icons.add_circle_outline),
             )

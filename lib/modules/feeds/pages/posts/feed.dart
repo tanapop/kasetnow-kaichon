@@ -85,7 +85,7 @@ class _PostsScreenState extends State<FeedPage> with WidgetsBindingObserver {
         backgroundColor: AppStyles.primaryColorBlackKnow,
         appBar: AppBar(
           centerTitle: true,
-          backgroundColor: AppStyles.primaryColorBlackKnow,
+          backgroundColor: AppStyles.primaryColorBlackKnow.withOpacity(0.8),
           title: Text("หน้าหลัก"),
           //title: LogoIcon(),
           // actions: const [
@@ -100,7 +100,8 @@ class _PostsScreenState extends State<FeedPage> with WidgetsBindingObserver {
             child: Text(
               "K",
               style: TextStyle(
-                  backgroundColor: AppStyles.primaryColorBlackKnow,
+                  backgroundColor:
+                      AppStyles.primaryColorBlackKnow.withOpacity(0.8),
                   fontFamily: "ZenDots",
                   fontSize: 33,
                   color: AppStyles.primaryColorRedKnow),

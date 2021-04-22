@@ -2,10 +2,10 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 
-import 'package:connectivity_widget/connectivity_widget.dart';
+//import 'package:connectivity_widget/connectivity_widget.dart';
 import 'package:firebase_core/firebase_core.dart';
 
-import 'components/connectivity.dart';
+// import 'components/connectivity.dart';
 import 'imports.dart';
 import 'modules/auth/pages/home.dart';
 

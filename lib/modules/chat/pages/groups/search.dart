@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:flappy_search_bar/flappy_search_bar.dart';
 import 'package:flappy_search_bar/search_bar_style.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:infinite_scroll_pagination/infinite_scroll_pagination.dart';
 
 import '../../../../imports.dart';
@@ -91,8 +90,9 @@ class _SearchResultItem extends StatelessWidget {
         ),
         title: Text(
           group.name,
-          style: GoogleFonts.basic(
-              textStyle: Theme.of(context).textTheme.subtitle1),
+          style: TextStyle(color: AppStyles.primaryColorWhite),
+          // style: GoogleFonts.basic(
+          //     textStyle: Theme.of(context).textTheme.subtitle1),
         ),
       ),
     );

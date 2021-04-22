@@ -60,7 +60,8 @@ class _PostWidgetState extends State<PostWidget> {
                           : post.content,
                       onOpen: (l) => launchURL(l.url),
                       style: TextStyle(
-                          color: AppStyles.primaryColorTextField, fontSize: 18),
+                          color: AppStyles.primaryColorWhite.withOpacity(0.9),
+                          fontSize: 18),
                     ),
                   ),
                   if (showMore)
@@ -163,7 +164,7 @@ class _PostWidgetState extends State<PostWidget> {
                     Container(
                       width: 0.5,
                       height: 20,
-                      color: theme.iconTheme.color,
+                      color: AppStyles.primaryColorWhite,
                     ),
                     SizedBox(width: 10),
                     GestureDetector(
@@ -171,8 +172,7 @@ class _PostWidgetState extends State<PostWidget> {
                       child: Text(
                         '${post.usersLikes?.length ?? 0} ถูกใจ',
                         style: theme.textTheme.subtitle1.copyWith(
-                            color: AppStyles.primaryColorTextField,
-                            fontSize: 14),
+                            color: AppStyles.primaryColorWhite, fontSize: 14),
                       ),
                     ),
                     Spacer(),
@@ -196,8 +196,7 @@ class _PostWidgetState extends State<PostWidget> {
                       label: Text(
                         '${post.commentsIDs?.length ?? 0} ความเห็น',
                         style: theme.textTheme.subtitle1.copyWith(
-                            color: AppStyles.primaryColorTextField,
-                            fontSize: 14),
+                            color: AppStyles.primaryColorWhite, fontSize: 14),
                       ),
                       onPressed: () async {
                         await AppNavigator.toComments(post);

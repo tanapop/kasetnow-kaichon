@@ -27,7 +27,8 @@ class $AssetsImagesGen {
 class Assets {
   Assets._();
 
-  static const AssetGenImage appIcon = AssetGenImage('assets/app_icon.png');
+  static const AssetGenImage appIcon =
+      AssetGenImage('assets/images/app_icon.png');
   static const $AssetsFlareGen flare = $AssetsFlareGen();
   static const $AssetsImagesGen images = $AssetsImagesGen();
 }

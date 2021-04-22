@@ -35,7 +35,7 @@ class _RegisterPageState extends State<RegisterPage> {
 
     return Scaffold(
       //appBar: Appbar(titleStr: t.Register),
-      backgroundColor: AppStyles.primaryColorGray,
+      backgroundColor: AppStyles.primaryBackBlackKnowText,
       body: Form(
         key: formKey,
         child: SingleChildScrollView(
@@ -48,7 +48,7 @@ class _RegisterPageState extends State<RegisterPage> {
               child: Container(
                 alignment: Alignment.topCenter,
                 decoration: BoxDecoration(
-                    color: AppStyles.primaryColorGray,
+                    color: AppStyles.primaryBackBlackKnowText,
                     borderRadius: BorderRadius.all(Radius.circular(100.0)),
                     border: Border.all(
                       color: Colors.white,
@@ -83,7 +83,7 @@ class _RegisterPageState extends State<RegisterPage> {
                           : n.copyWith(text: n.text.toLowerCase());
                     })
                   ],
-                  maxLength: 10,
+                  maxLength: 20,
                   validator: (s) => s.length < 3 ? t.AddValidUsername : null,
                   errorText: usernameErrorText(),
                   borderRadius: 50.0,
@@ -133,7 +133,7 @@ class _RegisterPageState extends State<RegisterPage> {
               ListTile(
                 leading: Obx(
                   () => Checkbox(
-                    activeColor: AppStyles.primaryColorLight,
+                    activeColor: AppStyles.primaryColorRedKnow,
                     checkColor: AppStyles.primaryColorWhite,
                     value: accepted(),
                     onChanged: accepted,
@@ -144,7 +144,7 @@ class _RegisterPageState extends State<RegisterPage> {
                   style: theme.textTheme.headline6.copyWith(
                       fontSize: 14,
                       decoration: TextDecoration.underline,
-                      color: AppStyles.primaryColorLight),
+                      color: AppStyles.primaryColorRedKnow),
                 ),
                 onTap: () => launchURL(appConfigs.termsURL),
               ),
@@ -153,6 +153,7 @@ class _RegisterPageState extends State<RegisterPage> {
                 () => AppButton(
                   t.Save,
                   color: AppStyles.primaryColorWhite,
+                  backgroundColor: AppStyles.primaryColorRedKnow,
                   isLoading: isLoading(),
                   onTap: accepted() ? onSave : null,
                 ),

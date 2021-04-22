@@ -33,7 +33,6 @@ import 'menu/model/choice_value.dart';
 import 'modules/auth/pages/profile/index.dart';
 import 'modules/chat/pages/chats/index.dart';
 import 'modules/feeds/pages/posts/feed.dart';
-import 'modules/ktv/ktv.dart';
 import 'modules/live/live.dart';
 
 class MainMenu extends StatefulWidget {

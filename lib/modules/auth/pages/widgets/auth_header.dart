@@ -23,14 +23,15 @@ class AuthTopHeader extends StatelessWidget {
             alignment: Alignment.topCenter,
             decoration: BoxDecoration(
                 image: DecorationImage(
-              image: AssetImage("assets/images/login-header-bg/login-head.png"),
+              image:
+                  AssetImage("assets/images/login-header-bg/login-head-2.png"),
               fit: BoxFit.fitWidth,
               alignment: Alignment.topCenter,
             )),
           ),
           Padding(
             padding: const EdgeInsets.only(top: 200, bottom: 20),
-            child: Image.asset(Assets.images.logo.path),
+            child: Image.asset(Assets.appIcon.path),
           ),
           Padding(
               padding: const EdgeInsets.only(top: 400, bottom: 20),

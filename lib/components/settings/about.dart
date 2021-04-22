@@ -1,14 +1,9 @@
 import 'package:flutter/material.dart';
-
-import 'package:google_fonts/google_fonts.dart';
-
 import '../../imports.dart';
 
 class AboutPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    final theme = Theme.of(context);
-
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
@@ -23,10 +18,9 @@ class AboutPage extends StatelessWidget {
             ),
           ),
           SizedBox(height: 10),
-          Text(
-            t.AppName,
-            style: GoogleFonts.cairo(textStyle: theme.textTheme.headline5),
-          ),
+          Text(t.AppName, style: TextStyle(color: AppStyles.primaryColorWhite)
+              // GoogleFonts.cairo(textStyle: theme.textTheme.headline5),
+              ),
           SizedBox(height: 16),
           ListTile(
             title: Text(t.About),
